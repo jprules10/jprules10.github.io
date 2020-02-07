@@ -5,17 +5,14 @@ body {
   overflow: hidden;
 }
 
-canvas {
-  display: block;
-  vertical-align: bottom;
-  overflow: hidden;
-}
-
-#game-of-life {
+#life {
 	top: 0px;
-	opacity: 0.3;
-	z-index: -99;
 	position: absolute;
+	-webkit-filter: blur( 0.7px ) contrast( 1.2 );
+	-moz-filter: blur( 0.7px ) contrast( 1.2 );
+	filter: blur( 0.7px ) contrast( 1.2 );
+	opacity: 0.3;
+	z-index: -1000;
 }
 
 body {
@@ -117,13 +114,3 @@ body {
   left: 1vh;
 }
 
-@media (max-aspect-ratio: 16/9) {
-	#game-of-life {
-		height: 100vh;
-	}
-}
-@media (min-aspect-ratio: 16/9) {
-	#game-of-life {
-		width: 100vw;
-	}
-}
