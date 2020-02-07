@@ -2,26 +2,23 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Geo', sans-serif;
+  overflow: hidden;
 }
 
 canvas {
   display: block;
   vertical-align: bottom;
+  overflow: hidden;
 }
 
-#particles-js {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: -100;
+#game-of-life {
+	top: 0px;
+	opacity: 0.3;
+	z-index: -99;
+	position: absolute;
 }
 
-#particles-js {
+body {
 	background: linear-gradient(top, #ff3232 0%,#fcf528 16%,#28fc28 32%,#28fcf8 50%,#272ef9 66%,#ff28fb 82%,#ff3232 100%);
 	background: -moz-linear-gradient(top, #ff3232 0%, #fcf528 16%, #28fc28 32%, #28fcf8 50%, #272ef9 66%, #ff28fb 82%, #ff3232 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3232), color-stop(16%,#fcf528), color-stop(32%,#28fc28), color-stop(50%,#28fcf8), color-stop(66%,#272ef9), color-stop(82%,#ff28fb), color-stop(100%,#ff3232));
@@ -118,4 +115,15 @@ canvas {
   position: absolute;
   bottom: 1vh;
   left: 1vh;
+}
+
+@media (max-aspect-ratio: 16/9) {
+	#game-of-life {
+		height: 100vh;
+	}
+}
+@media (min-aspect-ratio: 16/9) {
+	#game-of-life {
+		width: 100vw;
+	}
 }
