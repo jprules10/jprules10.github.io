@@ -58,38 +58,56 @@ background-size: 1800% 1800%;
 
 
 .title {
-	margin-top: 5vh;
+	margin-top: 11vh;
 	text-align: center;
 	font-size: 15vh;
 	color: white;
 	margin-bottom: 9vh;
   padding-left: 10px;
+  animation-duration: 2s;
 
 }
 
 .intro {
+  animation-duration: 3s;
 	text-align: center;
 	color: white;
 	margin-bottom: 9vh;
 }
 
 .view {
+  animation-duration: 2s;
 	text-align: center;
 	color: white;
 }
 
-.portfolioButton {
-	background-color: white; /* Green */
-  	border: none;
-  	color: black;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 3vh;
-  	margin:0 auto;
-    display:block;
-    font-family: 'Geo', sans-serif;
-    border-radius: 4px;
-    width: 250px;
+.button {
+  text-align: center;
+   display: block;
+   height: 50px;
+   min-width: 225px;
+   background: #ffffff;
+   border: none;
+   outline: none;
+   color: black;
+   font-family: inherit;
+   font-weight: 400;
+   font-size: 20px;
+   border-radius: 3px;
+   box-shadow: 0 5px 0px #dbdbdb;
+   border-bottom: 2px solid #bababa;
+   margin-left: auto;
+  margin-right: auto;
 }
+ .button:hover {
+   background: #c9c9c9;
+   box-shadow: 0 4px 1px #999999;
+   border-bottom: 2px solid #666666;
+   transition: all 0.1s ease-in;
+}
+ .button:active {
+   transform: translateY(4px);
+   border-bottom-width: 2px;
+   box-shadow: none;
+}
+ 
