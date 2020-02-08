@@ -5,6 +5,15 @@ body {
   overflow: hidden;
 }
 
+#color {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1001;
+}
+
 #life {
 	top: 0px;
 	position: absolute;
@@ -15,15 +24,15 @@ body {
 	z-index: -1000;
 }
 
-
-body { 
+#color { 
 background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
 background-size: 1800% 1800%;
 
 -webkit-animation: rainbow 25s ease infinite;
 -z-animation: rainbow 25s ease infinite;
 -o-animation: rainbow 25s ease infinite;
-  animation: rainbow 25s ease infinite;}
+  animation: rainbow 25s ease infinite;
+}
 
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -46,18 +55,22 @@ background-size: 1800% 1800%;
     100%{background-position:0% 82%}
 }
 
+
+
 .title {
 	margin-top: 5vh;
 	text-align: center;
-	font-size: 17vh;
+	font-size: 15vh;
 	color: white;
-	margin-bottom: 8vh;
+	margin-bottom: 9vh;
+  padding-left: 10px;
+
 }
 
 .intro {
 	text-align: center;
 	color: white;
-	margin-bottom: 8vh;
+	margin-bottom: 9vh;
 }
 
 .view {
@@ -73,29 +86,10 @@ background-size: 1800% 1800%;
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	font-size: 2vw;
+  	font-size: 3vh;
   	margin:0 auto;
     display:block;
     font-family: 'Geo', sans-serif;
     border-radius: 4px;
     width: 250px;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa-linkedin {
-  background: #3B5998;
-  width: 3vh;
-  height: 3vh;
-  color: white;
-  position: absolute;
-  bottom: 1vh;
-  left: 1vh;
-}
-
